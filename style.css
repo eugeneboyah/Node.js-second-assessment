@@ -4,9 +4,53 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: logoFont;
+    src: url(fonts/logo.ttf);
+}
+
+@font-face{
+    font-family: navFont;
+    src: url(fonts/nav.ttf);
+} 
+
+@font-face{
+    font-family: headFont;
+    src: url(fonts/heading.ttf);
+}
+
+@font-face{
+    font-family: paraFont;
+    src: url(fonts/para.ttf);
+} 
+
 body{
     font-family: sans-serif;
 
+}
+.navbar{
+    background-color: rgb(19, 129, 129);
+    display: flex;
+    justify-content:space-between ;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    padding: 5px;
+}
+.logo{
+    margin-left: 10px;
+    color: blue;
+    font-family: logoFont;
+    }
+.logo span{
+    color: aqua;
+    font-size: larger;
+  
+}
+.nav{
+    margin-right: 30%;
+    color: #f2f2f2;
+    font-family: navFont;
 }
 
 .container{
@@ -19,6 +63,7 @@ body{
     grid-template-rows: 500px 400px ;
     grid-template-columns: 2fr 2fr;
     border: 1px solid burlywood;
+    grid-gap: 2px;
 
 }
 
@@ -45,14 +90,23 @@ body{
 .about-me h1{
     margin-left: 25%;
     margin-right: 25%;
+    font-family: headFont;
 }
 .about-me p{
     margin-bottom: 10px;
     font-family: sans-serif;
+    font-family: paraFont;
+    font-size: 1.6rem;
+}
+
+.about-me h3{
+    font-size: 2rem;
+    font-family: paraFont;
 }
 .about-me li{
     margin-left: 25%;
     margin-right: 25%;
+    font-family: paraFont;
 }
 
 .social-media-link{
@@ -66,5 +120,5 @@ body{
     color: blue;
 }
 .social-media-link i{
-    border: 1px solid blue;
+  
 }
